@@ -1,0 +1,45 @@
+
+<!-- <div class="footer-bottom">
+    <div class="container">
+            <div class="store-switcher">
+    <label for="select-store">Select Store:</label>
+    <select id="select-store" title="Select Store" onchange="location.href=this.value">
+                        <option value="http://127.0.0.1:8082/magento/index.php/?___SID=U&___store=home1">Home 1</option>
+                    <option value="http://127.0.0.1:8082/magento/index.php/?___SID=U&___store=home2">Home 2</option>
+                    <option value="http://127.0.0.1:8082/magento/index.php/?___SID=U&___store=home3">Home 3</option>
+                    <option value="" selected="selected">Home 4</option>
+        </select>
+</div>
+
+<ul>
+    <li><a href="http://127.0.0.1:8082/magento/index.php/about-magento-demo-store?___SID=U">About Us</a></li>
+    <li><a href="http://127.0.0.1:8082/magento/index.php/customer-service?___SID=U">Customer Service</a></li>
+<li class="last privacy"><a href="http://127.0.0.1:8082/magento/index.php/privacy-policy-cookie-restriction-mode?___SID=U">Privacy Policy</a></li>
+</ul><div class="quick-access">
+	
+		<ul class="links">
+												<li class="first" ><a href="http://127.0.0.1:8082/magento/index.php/catalog/seo_sitemap/category/?___SID=U" title="Site Map" >Site Map</a></li>
+																<li ><a href="http://127.0.0.1:8082/magento/index.php/catalogsearch/term/popular/?___SID=U" title="Search Terms" >Search Terms</a></li>
+																<li ><a href="http://127.0.0.1:8082/magento/index.php/catalogsearch/advanced/?___SID=U" title="Advanced Search" >Advanced Search</a></li>
+																<li ><a href="http://127.0.0.1:8082/magento/index.php/sales/guest/form/?___SID=U" title="Orders and Returns" >Orders and Returns</a></li>
+																<li class=" last" ><a href="http://127.0.0.1:8082/magento/index.php/contacts/?___SID=U" title="Contact Us" >Contact Us</a></li>
+									</ul>
+	
+</div>	
+            <p class="bugs">Help Us to Keep Magento Healthy - <a href="http://www.magentocommerce.com/bug-tracking" onclick="this.target='_blank'"><strong>Report All Bugs</strong></a> (ver. 1.9.2.0)</p>
+    </div>
+</div> -->
+
+<div id="powered">
+	<div class="inner">
+		<div class="container">
+			<div class="row">
+				<div class="copyright col-lg-12 col-md-12 col-sm-12 col-xs-12">
+					<address>Copyright 2015 venustheme.com</address>					<br/>
+										Developed By <a href="http://www.venusthemes.com" title="Venusthemes - Magento themes clubs">VenusThemes</a>				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<div id="top"><a class="scrollup" href="#"><i class="fa fa-angle-up"></i>Top</a></div>

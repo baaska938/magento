@@ -1,0 +1,278 @@
+<div id="ves-verticalmenu" class="block ves-verticalmenu hidden-xs hidden-sm">
+		<div class="block-title">
+		<strong><span>Categories</span></strong>
+		<em class="shapes right"></em>	
+		<em class="line"></em>
+	</div>
+		<div class="block-content">
+		<div class="navbar navbar-inverse">
+			<div id="verticalmenu" class="verticalmenu" role="navigation">
+				<div class="navbar">
+				<a href="javascript:;" data-target=".navbar-collapse" data-toggle="collapse" class="navbar-toggle">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			     </a>
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav verticalmenu"><li class="vectical-item4 " >
+					<a href="http://127.0.0.1:8082/magento/index.php/fashion-clothing.html?___SID=U"  title="Fashion & Clothing"><span class="menu-icon" style="background:url('http://127.0.0.1:8082/magento/media/ves_verticalmenu/i/c/icon1.png') no-repeat;"><span class="menu-title">Fashion & Clothing</span></span></a></li><li class="vectical-item1 parent dropdown aligned-left  " >
+					<a href="http://127.0.0.1:8082/magento/index.php/electronics-computers.html?___SID=U" class="dropdown-toggle" title="Electronics & Computer" data-toggle="dropdown" ><span class="menu-icon" style="background:url('http://127.0.0.1:8082/magento/media/ves_verticalmenu/i/c/icon2.png') no-repeat;"><span class="menu-title">Electronics & Computer</span></span><b class="caret"></b></a><div class="dropdown-menu"  style="width:600px" ><div class="dropdown-menu-inner"><div class="row"><div class="mega-col col-sm-12 "  data-widgets="wid-4"  data-colwidth="12" > <div class="mega-col-inner"><div class="ves-widget" data-id="wid-4"><div class="widget-product-list">
+  <div class="widget-inner">
+    
+      
+            <div class="product-block w-product">
+        <div class="image"><a href="http://127.0.0.1:8082/magento/index.php/shoes-aliqua-aiusmod-tempor-incididu.html?___SID=U"><img src="http://127.0.0.1:8082/magento/media/catalog/product/cache/1/small_image/300x330/9df78eab33525d08d6e5fb8d27136e95/1/_/1.jpg" alt="Elect aliqua aiusmod tempor incididu" /></a></div>
+        <div class="name"><a href="http://127.0.0.1:8082/magento/index.php/shoes-aliqua-aiusmod-tempor-incididu.html?___SID=U">Elect aliqua aiusmod tempor incididu</a></div>
+        <div class="price">
+          
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Regular Price:</span>
+                <span class="price" id="old-price-47">
+                    $85.00                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Special Price</span>
+                <span class="price" id="product-price-47">
+                    $70.00                </span>
+                </p>
+                                    
+    
+        </div>
+
+        </div>
+                        <div class="cart"><button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://127.0.0.1:8082/magento/index.php/checkout/cart/add/uenc/aHR0cDovLzEyNy4wLjAuMTo4MDgyL21hZ2VudG8vaW5kZXgucGhwL2N1c3RvbWVyL2FjY291bnQvaW5kZXgv/product/47/form_key/eoS689cyBtppdFvR/?___SID=U')"><span><span>Add to Cart</span></span></button></div>
+              </div>
+      
+            <div class="product-block w-product">
+        <div class="image"><a href="http://127.0.0.1:8082/magento/index.php/shoes-mattresses-and-bedding-the-visco.html?___SID=U"><img src="http://127.0.0.1:8082/magento/media/catalog/product/cache/1/small_image/300x330/9df78eab33525d08d6e5fb8d27136e95/3/_/3_2.jpg" alt="Elect Mattresses and Bedding-The Visco" /></a></div>
+        <div class="name"><a href="http://127.0.0.1:8082/magento/index.php/shoes-mattresses-and-bedding-the-visco.html?___SID=U">Elect Mattresses and Bedding-The Visco</a></div>
+        <div class="price">
+          
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Regular Price:</span>
+                <span class="price" id="old-price-48">
+                    $267.00                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Special Price</span>
+                <span class="price" id="product-price-48">
+                    $200.00                </span>
+                </p>
+                                    
+    
+        </div>
+
+        </div>
+                        <div class="cart"><button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://127.0.0.1:8082/magento/index.php/checkout/cart/add/uenc/aHR0cDovLzEyNy4wLjAuMTo4MDgyL21hZ2VudG8vaW5kZXgucGhwL2N1c3RvbWVyL2FjY291bnQvaW5kZXgv/product/48/form_key/eoS689cyBtppdFvR/?___SID=U')"><span><span>Add to Cart</span></span></button></div>
+              </div>
+      
+            <div class="product-block w-product">
+        <div class="image"><a href="http://127.0.0.1:8082/magento/index.php/shoes-sed-ut-perspiciatis-unde-omnis.html?___SID=U"><img src="http://127.0.0.1:8082/magento/media/catalog/product/cache/1/small_image/300x330/9df78eab33525d08d6e5fb8d27136e95/8/_/8.jpg" alt="Elect sed ut perspiciatis unde omnis" /></a></div>
+        <div class="name"><a href="http://127.0.0.1:8082/magento/index.php/shoes-sed-ut-perspiciatis-unde-omnis.html?___SID=U">Elect sed ut perspiciatis unde omnis</a></div>
+        <div class="price">
+          
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Regular Price:</span>
+                <span class="price" id="old-price-51">
+                    $324.00                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Special Price</span>
+                <span class="price" id="product-price-51">
+                    $288.00                </span>
+                </p>
+                                    
+    
+        </div>
+
+        </div>
+                        <div class="cart"><button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://127.0.0.1:8082/magento/index.php/checkout/cart/add/uenc/aHR0cDovLzEyNy4wLjAuMTo4MDgyL21hZ2VudG8vaW5kZXgucGhwL2N1c3RvbWVyL2FjY291bnQvaW5kZXgv/product/51/form_key/eoS689cyBtppdFvR/?___SID=U')"><span><span>Add to Cart</span></span></button></div>
+              </div>
+      
+            <div class="product-block w-product">
+        <div class="image"><a href="http://127.0.0.1:8082/magento/index.php/shoes-excepteur-sint-occaecat-cupidatat.html?___SID=U"><img src="http://127.0.0.1:8082/magento/media/catalog/product/cache/1/small_image/300x330/9df78eab33525d08d6e5fb8d27136e95/1/1/11.jpg" alt="Elect excepteur sint occaecat cupidatat" /></a></div>
+        <div class="name"><a href="http://127.0.0.1:8082/magento/index.php/shoes-excepteur-sint-occaecat-cupidatat.html?___SID=U">Elect excepteur sint occaecat cupidatat</a></div>
+        <div class="price">
+          
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-52">
+                                            <span class="price">$124.00</span>                                    </span>
+                                         
+        </div>
+
+        </div>
+                        <div class="cart"><button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://127.0.0.1:8082/magento/index.php/checkout/cart/add/uenc/aHR0cDovLzEyNy4wLjAuMTo4MDgyL21hZ2VudG8vaW5kZXgucGhwL2N1c3RvbWVyL2FjY291bnQvaW5kZXgv/product/52/form_key/eoS689cyBtppdFvR/?___SID=U')"><span><span>Add to Cart</span></span></button></div>
+              </div>
+      
+            <div class="product-block w-product">
+        <div class="image"><a href="http://127.0.0.1:8082/magento/index.php/shoes-quis-autem-vel-eum-iure.html?___SID=U"><img src="http://127.0.0.1:8082/magento/media/catalog/product/cache/1/small_image/300x330/9df78eab33525d08d6e5fb8d27136e95/1/2/12_1_1.jpg" alt="Elect quis autem vel eum iure" /></a></div>
+        <div class="name"><a href="http://127.0.0.1:8082/magento/index.php/shoes-quis-autem-vel-eum-iure.html?___SID=U">Elect quis autem vel eum iure</a></div>
+        <div class="price">
+          
+
+                        
+    <div class="price-box">
+                                            
+                    <p class="old-price">
+                <span class="price-label">Regular Price:</span>
+                <span class="price" id="old-price-53">
+                    $86.00                </span>
+            </p>
+
+                            <p class="special-price">
+                    <span class="price-label">Special Price</span>
+                <span class="price" id="product-price-53">
+                    $75.00                </span>
+                </p>
+                                    
+    
+        </div>
+
+        </div>
+                        <div class="cart"><button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://127.0.0.1:8082/magento/index.php/checkout/cart/add/uenc/aHR0cDovLzEyNy4wLjAuMTo4MDgyL21hZ2VudG8vaW5kZXgucGhwL2N1c3RvbWVyL2FjY291bnQvaW5kZXgv/product/53/form_key/eoS689cyBtppdFvR/?___SID=U')"><span><span>Add to Cart</span></span></button></div>
+              </div>
+      
+            <div class="product-block w-product">
+        <div class="image"><a href="http://127.0.0.1:8082/magento/index.php/shoes-duis-aute-irure-dolor-in-voluptate.html?___SID=U"><img src="http://127.0.0.1:8082/magento/media/catalog/product/cache/1/small_image/300x330/9df78eab33525d08d6e5fb8d27136e95/1/0/10_1_1_1.jpg" alt="Elect duis aute irure dolor in voluptate" /></a></div>
+        <div class="name"><a href="http://127.0.0.1:8082/magento/index.php/shoes-duis-aute-irure-dolor-in-voluptate.html?___SID=U">Elect duis aute irure dolor in voluptate</a></div>
+        <div class="price">
+          
+
+                        
+    <div class="price-box">
+                                                                <span class="regular-price" id="product-price-54">
+                                            <span class="price">$286.00</span>                                    </span>
+                                         
+        </div>
+
+        </div>
+                        <div class="cart"><button type="button" title="Add to Cart" class="button btn-cart" onclick="setLocation('http://127.0.0.1:8082/magento/index.php/checkout/cart/add/uenc/aHR0cDovLzEyNy4wLjAuMTo4MDgyL21hZ2VudG8vaW5kZXgucGhwL2N1c3RvbWVyL2FjY291bnQvaW5kZXgv/product/54/form_key/eoS689cyBtppdFvR/?___SID=U')"><span><span>Add to Cart</span></span></button></div>
+              </div>
+            
+  </div>
+</div>
+</div></div></div></div></div></div></li><li class="vectical-item2 parent dropdown aligned-left  " >
+					<a href="http://127.0.0.1:8082/magento/index.php/toys-kid-baby.html?___SID=U" class="dropdown-toggle" title="Toys, Kids & Baby" data-toggle="dropdown" ><span class="menu-icon" style="background:url('http://127.0.0.1:8082/magento/media/ves_verticalmenu/i/c/icon3.png') no-repeat;"><span class="menu-title">Toys, Kids & Baby</span></span><b class="caret"></b></a><div class="dropdown-menu"  style="width:439px" ><div class="dropdown-menu-inner"><div class="row"><div class="mega-col col-sm-6 "  data-widgets="wid-1"  data-colwidth="6" > <div class="mega-col-inner"><div class="ves-widget" data-id="wid-1"><div class="menu-title">Men</div>
+<div class="widget-html">
+	<div class="widget-inner">
+		<ul class="nav-links">
+<li><a href="#">Accessories </a></li>
+<li><a href="#">Bags</a></li>
+<li><a href="#">Caps - Hats</a></li>
+<li><a href="#">Gifts</a></li>
+<li><a href="#">Grooming</a></li>
+</ul>	</div>
+</div></div></div></div><div class="mega-col col-sm-6 "  data-widgets="wid-2"  data-colwidth="6" > <div class="mega-col-inner"><div class="ves-widget" data-id="wid-2"><div class="menu-title">accessories</div>
+<div class="widget-html">
+	<div class="widget-inner">
+		<ul class="nav-links">
+<li> <a href="#">Jeans</a> </li>
+<li> <a href="#">Jewellery</a> </li>
+<li> <a href="#">Jumpers - Cardigans</a> </li>
+<li> <a href="#">Leather Jackets</a> </li>
+<li> <a href="#">Long Sleeve T-Shirts</a> </li>
+<li> <a href="#">Loungewear</a> </li>
+</ul>	</div>
+</div></div></div></div></div><div class="row"><div class="mega-col col-sm-6 "  data-widgets="wid-3"  data-colwidth="6" > <div class="mega-col-inner"><div class="ves-widget" data-id="wid-3"><div class="menu-title">Women</div>
+<div class="widget-html">
+	<div class="widget-inner">
+		<ul class="nav-links">
+<li> <a href="#">Hoodies - Sweatshirts</a> </li>
+<li> <a href="#">Jackets - Coats</a> </li>
+<li> <a href="#">Jeans</a> </li>
+<li> <a href="#">Jewellery</a> </li>
+<li> <a href="#">Jumpers - Cardigans</a> </li>
+</ul>	</div>
+</div></div></div></div></div></div></div></li><li class="vectical-item3 " >
+					<a href="http://127.0.0.1:8082/magento/index.php/home-garden-tools.html?___SID=U"  title="Home, Garden & Tools"><span class="menu-icon" style="background:url('http://127.0.0.1:8082/magento/media/ves_verticalmenu/i/c/icon4.png') no-repeat;"><span class="menu-title">Home, Garden & Tools</span></span></a></li><li class="vectical-item5 parent dropdown aligned-left  " >
+					<a href="http://127.0.0.1:8082/magento/index.php/decor-furniture.html?___SID=U" class="dropdown-toggle" title="Decor & Furniture" data-toggle="dropdown" ><span class="menu-icon" style="background:url('http://127.0.0.1:8082/magento/media/ves_verticalmenu/i/c/icon5.png') no-repeat;"><span class="menu-title">Decor & Furniture</span></span><b class="caret"></b></a><div class="dropdown-menu"  style="width:800px" ><div class="dropdown-menu-inner"><div class="row"><div class="mega-col col-sm-3 "  data-widgets="wid-5"  data-colwidth="3" > <div class="mega-col-inner"><div class="ves-widget" data-id="wid-5"><div class="menu-title">Decor & Furniture</div>
+<div class="widget-category-list">
+  <div class="widget-inner">
+      <ul>
+                  <li><a href="http://127.0.0.1:8082/magento/index.php/decor-furniture/sofas-loveseats.html?___SID=U"><span>Sofas & Loveseats</span></a></li>
+                  <li><a href="http://127.0.0.1:8082/magento/index.php/decor-furniture/coffee-sofa.html?___SID=U"><span>Coffee, Sofa</span></a></li>
+                  <li><a href="http://127.0.0.1:8082/magento/index.php/decor-furniture/living-room-chairs.html?___SID=U"><span>Living Room Chairs</span></a></li>
+                  <li><a href="http://127.0.0.1:8082/magento/index.php/decor-furniture/ottomans.html?___SID=U"><span>Ottomans</span></a></li>
+                  <li><a href="http://127.0.0.1:8082/magento/index.php/decor-furniture/benches.html?___SID=U"><span>Benches</span></a></li>
+                  <li><a href="http://127.0.0.1:8082/magento/index.php/decor-furniture/book-shelves.html?___SID=U"><span>Book shelves</span></a></li>
+                  <li><a href="http://127.0.0.1:8082/magento/index.php/decor-furniture/sectional-sofas.html?___SID=U"><span>Sectional Sofas</span></a></li>
+                  <li><a href="http://127.0.0.1:8082/magento/index.php/decor-furniture/recliners.html?___SID=U"><span>Recliners</span></a></li>
+                  <li><a href="http://127.0.0.1:8082/magento/index.php/decor-furniture/futons.html?___SID=U"><span>Futons</span></a></li>
+                  <li><a href="http://127.0.0.1:8082/magento/index.php/decor-furniture/lounge-chairs.html?___SID=U"><span>Lounge Chairs</span></a></li>
+                  <li><a href="http://127.0.0.1:8082/magento/index.php/decor-furniture/living-room-sets.html?___SID=U"><span>Living Room Sets</span></a></li>
+            </ul>
+  </div>
+</div>
+</div></div></div><div class="mega-col col-sm-9 "  data-widgets="wid-6"  data-colwidth="9" > <div class="mega-col-inner"><div class="ves-widget" data-id="wid-6"><div class="widget-html">
+	<div class="widget-inner">
+		<div class="row menu-custom1">
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
+<p><img alt="" src="http://127.0.0.1:8082/magento/media/wysiwyg/fashion/Tidal_Touches_Tabletop_Essentials.jpg" /> <a href="#">Tidal Touches: Tabletop Essentials &raquo;</a></p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
+<p><img alt="" src="http://127.0.0.1:8082/magento/media/wysiwyg/fashion/Chic_Seaside_Suite.jpg" /> <a href="#">Chic Seaside Suite &raquo;</a></p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
+<p><img alt="" src="http://127.0.0.1:8082/magento/media/wysiwyg/fashion/Calming_Comforts_Pillows_More.jpg" /> <a href="#">Calming Comforts: Pillows &amp; More &raquo;</a></p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
+<p><img alt="" src="http://127.0.0.1:8082/magento/media/wysiwyg/fashion/Anchor_Your_Style_Living_Room_Looks.jpg" /> <a href="#">Anchor Your Style: Living Room Looks &raquo;</a></p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
+<p><img alt="" src="http://127.0.0.1:8082/magento/media/wysiwyg/fashion/Shore_Things_Accents_Under_40.jpg" /> <a href="#">Shore Things: Accents Under $40 &raquo;</a></p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 item">
+<p><img alt="" src="http://127.0.0.1:8082/magento/media/wysiwyg/fashion/Oceanfront_Office.jpg" /> <a href="#">Oceanfront Office &raquo;</a></p>
+</div>
+</div>
+<div class="a-right">
+<a href="decor-furniture.html">Shop All Sale &raquo;</a>
+</div>	</div>
+</div></div></div></div></div></div></div></li><li class="vectical-item6 " >
+					<a href="http://127.0.0.1:8082/magento/index.php/sports-outdoors.html?___SID=U"  title="Sports & Outdoors"><span class="menu-icon" style="background:url('http://127.0.0.1:8082/magento/media/ves_verticalmenu/i/c/icon6.png') no-repeat;"><span class="menu-title">Sports & Outdoors</span></span></a></li><li class="vectical-item7 " >
+					<a href="http://127.0.0.1:8082/magento/index.php/gift-parties-holiday.html?___SID=U"  title="Gifts, Parties & Holiday"><span class="menu-icon" style="background:url('http://127.0.0.1:8082/magento/media/ves_verticalmenu/i/c/icon7.png') no-repeat;"><span class="menu-title">Gifts, Parties & Holiday</span></span></a></li><li class="vectical-item8 " >
+					<a href="#"  title="Beauty & Health"><span class="menu-icon" style="background:url('http://127.0.0.1:8082/magento/media/ves_verticalmenu/i/c/icon8.png') no-repeat;"><span class="menu-title">Beauty & Health</span></span></a></li></ul>				 </div></div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+jQuery(window).ready( function(){
+
+	/*  Fix First Click Menu */
+	jQuery(document.body).on('click', '#verticalmenu [data-toggle="dropdown"]' ,function(event){
+		event.stopImmediatePropagation();
+		jQuery(this).parent().show();
+		if(!jQuery(this).parent().hasClass('open') && this.href && this.href != '#'){
+			window.location.href = this.href;
+		}
+
+	});
+	jQuery(document.body).on('dblclick', '#verticalmenu [data-toggle="dropdown"]' ,function(event){
+		event.stopImmediatePropagation();
+		jQuery(this).parent().show();
+		if(!jQuery(this).parent().hasClass('open') && this.href && this.href != '#'){
+			window.location.href = this.href;
+		}
+
+	});
+});
+</script>
