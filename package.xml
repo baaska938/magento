@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>Ves_Socialsidebar</name>
+    <version>1.1.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.opensource.org/licenses/osl-3.0.php">OSL v3.0</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>A sample version of ves_socialsidebar for magento</summary>
+    <description>And more, the module is developed many features:</description>
+    <notes>Compatible with magento 1.4.x - 1.6.x</notes>
+    <authors><author><name>venustheme</name><user>venustheme</user><email>venustheme@gmail.com</email></author></authors>
+    <date>2015-01-07</date>
+    <time>03:49:38</time>
+    <contents><target name="magecommunity"><dir name="Ves"><dir name="Socialsidebar"><dir name="Block"><file name="Socialsidebar.php" hash="37b0b98f1dd679589d5579c693a9c6a1"/><dir name="System"><dir name="Config"><dir name="Form"><dir name="Field"><file name="Information.php" hash="4e41cb77c428ebb94d9f7aab4fe4dc71"/><file name="Notification.php" hash="dc3ceaed33ce7023f490d7bb4ca30450"/><file name="Spacer.php" hash="d06432d9ad536a11e94394ab40c5386b"/></dir><file name=".DS_Store" hash="629614048b69ad18f89597a118ea041d"/></dir><file name=".DS_Store" hash="938f9b04bd09edf9eed1dbc4015c15b3"/></dir><file name=".DS_Store" hash="025406d2665f8c8ccafda0078cda1d79"/></dir></dir><dir name="Helper"><file name="Data.php" hash="248a236173efa1118333ae14b312b8c3"/><file name="Media.php" hash="40825b294c28bfaef3273bc91d5a4cd4"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="ListPosition.php" hash="eaee3fa9614bf788ffa28442bbae5844"/><file name="ListService.php" hash="918ba9f2512ad9b7ee553fb83cb7e22d"/><file name="ListTheme.php" hash="d9ba71c4f718cb8d16fd8dafbdea9567"/></dir></dir></dir></dir><dir name="controllers"><file name="IndexController.php" hash="da5c453d925ac0379865512d88444a18"/></dir><dir name="etc"><file name="adminhtml.xml" hash="a123fafefa0f5813c39f4303fce6e3c8"/><file name="config.xml" hash="788bc6b464be1fad9920caf43bdceefa"/><file name="system.xml" hash="e76b2cd390893bd538860050e95caaf4"/></dir><file name=".DS_Store" hash="c86442ffd2bba4d44cf8d3230a7d0ac1"/></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Ves_Socialsidebar.xml" hash="20d64df891198381f1f8f3920dfdad64"/></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="template"><dir name="ves"><dir name="socialsidebar"><file name="default.phtml" hash="751af4e847fbd295c85a603c8e9a4e37"/></dir></dir></dir><dir name="layout"><file name="ves_socialsidebar.xml" hash="9e7b770e9a23605b0fe0c80d1fea28a7"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.1.0</min><max>6.1.0</max></php></required></dependencies>
+</package>

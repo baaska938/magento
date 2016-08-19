@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+	<faqadmin_adminhtml_question_index>
+		<reference name="content">
+			<block type="ves_faq/adminhtml_question" name="ves_faq.question"/>
+		</reference>
+	</faqadmin_adminhtml_question_index>
+	<faqadmin_adminhtml_question_edit>
+		<update handle="editor"/>
+	</faqadmin_adminhtml_question_edit>
+	<faqadmin_adminhtml_category_index>
+		<reference name="content">
+			<block type="ves_faq/adminhtml_category" name="ves_faq.category"/>
+		</reference>
+	</faqadmin_adminhtml_category_index>
+	<faqadmin_adminhtml_answer_index>
+		<reference name="content">
+			<block type="ves_faq/adminhtml_answer" name="ves_faq.answer"/>
+		</reference>
+	</faqadmin_adminhtml_answer_index>
+</layout>

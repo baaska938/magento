@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.1.0">
+	<default>
+		<reference name="head">
+			<!-- Load Css Files -->
+			<action method="addItem" ifconfig="ves_livecss/general/show"><type>skin_css</type><name>ves_base/paneltool.css</name></action>
+
+			<action method="addItem" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_animation"><type>skin_css</type><name>ves_base/animate.css</name></action>
+			
+			<action method="addItem" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_bootstrap"><type>js_css</type><name>ves_base/bootstrap/css/bootstrap.min.css</name></action>
+
+			<action method="addItem" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_tinybootstrap"><type>js_css</type><name>ves_base/bootstrap/css/bootstrap-tiny.css</name></action>
+
+			<action method="addItem" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_jquery_ui"><type>js_css</type><name>ves_base/jquery/ui/jquery-ui.min.css</name></action>
+
+			<action method="addItem" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_owl"><type>skin_css</type><name>ves_base/owlcarousel/owl.carousel.css</name></action>
+
+			<action method="addItem" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_colorbox"><type>skin_css</type><name>ves_base/colorbox/colorbox.css</name></action>
+
+			<action method="addItem"><type>skin_css</type><name>ves_base/style.css</name></action>
+
+			<action method="addItem" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/use_sample_elements"><type>skin_css</type><name>ves_base/elements.css</name></action>
+
+			<action method="addItem" module="ves_blockbuilder" ifconfig="ves_livecss/general/show"><type>js_css</type><name>ves_base/jquery/colorpicker/css/colorpicker.css</name></action>
+
+			<action method="addCss" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/show"><stylesheet helper="ves_blockbuilder/cssgen/getProfileFile" /><params>id="loaded_custom_css_profile"</params></action>
+
+			<!-- Load Js Files -->
+
+			<action method="addJs" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_jquery"><script>ves_base/jquery/jquery-2.1.1.min.js</script></action>
+
+			<action method="addJs" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_jquery"><script>ves_base/jquery/noconflict.js</script></action>
+
+			<action method="addJs"><script>ves_base/jquery/jquery.transition.js</script></action>
+
+			<action method="addJs" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_bootstrap"><script>ves_base/bootstrap/js/bootstrap.min.js</script></action>
+
+			<action method="addJs" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_jquery_ui"><script>ves_base/jquery/ui/jquery-ui.min.js</script></action>
+
+			<action method="addItem" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_colorbox"><type>skin_js</type><name>ves_base/colorbox/jquery.colorbox-min.js</name><params/></action>
+
+			<action method="addJs" module="ves_blockbuilder" ifconfig="ves_livecss/general/show"><script>ves_base/jquery/colorpicker/js/colorpicker.js</script></action>
+
+			<action method="addJs" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_jquery"><script>ves_base/jquery/owl.carousel.min.js</script></action>
+
+			<action method="addJs" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_holder_js"><script>ves_base/jquery/holder.min.js</script></action>
+
+			<action method="addJs" module="ves_blockbuilder" ifconfig="ves_blockbuilder/ves_blockbuilder/enable_animation"><script>ves_base/animate/animate.min.js</script></action>
+
+			<action method="addJs"><script>ves_base/jquery/jquery.parallax-1.1.3.js</script></action>
+			<!-- <action method="addJs"><script>ves_base/front.common.js</script></action> -->
+			<action method="addItem">
+                  <type>skin_js</type>
+                  <name>ves_base/js/common.js</name>
+                  <params/>
+            </action>
+			
+	  	</reference>
+	</default>
+</layout>

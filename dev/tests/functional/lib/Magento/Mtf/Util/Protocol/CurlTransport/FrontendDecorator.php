@@ -1,12 +1,32 @@
 <?php
 /**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    Tests
+ * @package     Tests_Functional
+ * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 namespace Magento\Mtf\Util\Protocol\CurlTransport;
 
-use Magento\Customer\Test\Fixture\Customer;
+use Mage\Customer\Test\Fixture\Customer;
 use Magento\Mtf\Util\Protocol\CurlInterface;
 use Magento\Mtf\Util\Protocol\CurlTransport;
 
@@ -64,7 +84,7 @@ class FrontendDecorator implements CurlInterface
     protected function authorize(Customer $customer)
     {
         $url = $_ENV['app_frontend_url'] . 'customer/account/login/';
-        $this->transport->write($url);
+        $this->transport->write(CurlInterface::POST, $url);
         $this->read();
         $url = $_ENV['app_frontend_url'] . 'customer/account/loginPost/';
         $data = [
@@ -72,7 +92,7 @@ class FrontendDecorator implements CurlInterface
             'login[password]' => $customer->getPassword(),
             'form_key' => $this->formKey,
         ];
-        $this->transport->write($url, $data, CurlInterface::POST, ['Set-Cookie:' . $this->cookies]);
+        $this->transport->write(CurlInterface::POST, $url, '1.1', ['Set-Cookie:' . $this->cookies], $data);
         $response = $this->read();
         if (strpos($response, 'customer/account/login')) {
             throw new \Exception($customer->getFirstname() . ', cannot be logged in by curl handler!');
@@ -109,19 +129,16 @@ class FrontendDecorator implements CurlInterface
     /**
      * Send request to the remote server.
      *
-     * @param string $url
-     * @param mixed $params
      * @param string $method
-     * @param mixed $headers
+     * @param string $url
+     * @param string $httpVer
+     * @param array $headers
+     * @param array $params
      * @return void
      */
-    public function write($url, $params = [], $method = CurlInterface::POST, $headers = [])
+    public function write($method, $url, $httpVer = '1.1', $headers = [], $params = [])
     {
-        if ($this->formKey) {
-            $params['form_key'] = $this->formKey;
-        }
-        $headers = ['Set-Cookie:' . $this->cookies];
-        $this->transport->write($url, http_build_query($params), $method, $headers);
+        $this->transport->write($method, $url, $httpVer, ['Set-Cookie:' . $this->cookies], http_build_query($params));
     }
 
     /**

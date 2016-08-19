@@ -1,7 +1,27 @@
 <?php
 /**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    Tests
+ * @package     Tests_Functional
+ * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 namespace Magento\Mtf\Client\Element;
@@ -10,102 +30,94 @@ use Magento\Mtf\Client\Locator;
 use Magento\Mtf\Client\ElementInterface;
 
 /**
- * Class MultiselectgrouplistElement
- * Typified element class for multiselect with group
+ * Typified element class for multiselect with group.
  */
 class MultiselectgrouplistElement extends MultiselectElement
 {
     /**
-     * Indent length
+     * Indent length.
      */
     const INDENT_LENGTH = 4;
 
     /**
-     * Locator for search optgroup by label
+     * Locator for search optgroup by label.
      *
      * @var string
      */
     protected $optgroupByLabel = './/optgroup[@label="%s"]';
 
     /**
-     * Locator for search optgroup by number
+     * Locator for search optgroup by number.
      *
      * @var string
      */
     protected $optgroupByNumber = './/optgroup[%d]';
 
     /**
-     * Locator for search next optgroup
+     * Locator for search next optgroup.
      *
      * @var string
      */
     protected $nextOptgroup = './/following-sibling::optgroup[%d]';
 
     /**
-     * Locator for search child optgroup
+     * Locator for search child optgroup.
      *
      * @var string
      */
     protected $childOptgroup = ".//following-sibling::optgroup[%d][@label='%s']";
 
     /**
-     * Locator for search parent optgroup
+     * Locator for search parent optgroup.
      *
      * @var string
      */
     protected $parentOptgroup = 'optgroup[option[text()="%s"]]';
 
     /**
-     * Locator for search preceding sibling optgroup
+     * Locator for search preceding sibling optgroup.
      *
      * @var string
      */
     protected $precedingOptgroup = '/preceding-sibling::optgroup[1][substring(@label,1,%d)="%s"]';
 
     /**
-     * Locator for option
+     * Locator for option.
      *
      * @var string
      */
     protected $option = './/option[text()="%s"]';
 
     /**
-     * Locator search for option by number
+     * Locator search for option by number.
      *
      * @var string
      */
     protected $childOptionByNumber = './/optgroup[%d]/option[%d]';
 
     /**
-     * Locator search for option by data-text attribute
-     *
-     * @var string
-     */
-    protected $uiOptionText = './/option[@data-title="%s"]';
-
-    /**
-     * Locator for search parent option
+     * Locator for search parent option.
      *
      * @var string
      */
     protected $optionByNumber = './option[%d]';
 
     /**
-     * Indent, four symbols non breaking space
+     * Indent, four symbols non breaking space.
      *
      * @var string
      */
     protected $indent = "\xC2\xA0\xC2\xA0\xC2\xA0\xC2\xA0";
 
     /**
-     * Trim symbols
+     * Trim symbols.
      *
      * @var string
      */
     protected $trim = "\xC2\xA0 ";
 
     /**
-     * Set values
+     * Set values.
      *
      * @param array|string $values
      * @return void
@@ -120,7 +132,7 @@ class MultiselectgrouplistElement extends MultiselectElement
     }
 
     /**
-     * Select option
+     * Select option.
      *
      * @param string $option
      * @return void
@@ -128,14 +140,6 @@ class MultiselectgrouplistElement extends MultiselectElement
      */
     protected function selectOption($option)
     {
-        $optionElement = $this->find(sprintf($this->uiOptionText, $option), Locator::SELECTOR_XPATH);
-        if ($optionElement->isVisible()) {
-            if (!$optionElement->isSelected()) {
-                $optionElement->click();
-            }
-            return;
-        }
-
         $isOptgroup = false;
         $optgroupIndent = '';
         $values = explode('/', $option);
@@ -164,7 +168,7 @@ class MultiselectgrouplistElement extends MultiselectElement
     }
 
     /**
-     * Get optgroup
+     * Get optgroup.
      *
      * @param string $value
      * @param ElementInterface $context
@@ -182,7 +186,7 @@ class MultiselectgrouplistElement extends MultiselectElement
     }
 
     /**
-     * Get child optgroup
+     * Get child optgroup.
      *
      * @param string $value
      * @param ElementInterface $context
@@ -213,7 +217,7 @@ class MultiselectgrouplistElement extends MultiselectElement
     }
 
     /**
-     * Get value
+     * Get value.
      *
      * @return array
      * @SuppressWarnings(PHPMD.NPathComplexity)
@@ -268,7 +272,7 @@ class MultiselectgrouplistElement extends MultiselectElement
     }
 
     /**
-     * Get options
+     * Get options.
      *
      * @return ElementInterface[]
      */
@@ -309,7 +313,7 @@ class MultiselectgrouplistElement extends MultiselectElement
     }
 
     /**
-     * Get selected options
+     * Get selected options.
      *
      * @return array
      */

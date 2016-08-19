@@ -1,47 +1,59 @@
 <?php
 /**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
+ * Magento
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Open Software License (OSL 3.0)
+ * that is bundled with this package in the file LICENSE.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/osl-3.0.php
+ * If you did not receive a copy of the license and are unable to
+ * obtain it through the world-wide-web, please send an email
+ * to license@magento.com so we can send you a copy immediately.
+ *
+ * DISCLAIMER
+ *
+ * Do not edit or add to this file if you wish to upgrade Magento to newer
+ * versions in the future. If you wish to customize Magento for your
+ * needs please refer to http://www.magento.com for more information.
+ *
+ * @category    Tests
+ * @package     Tests_Functional
+ * @copyright  Copyright (c) 2006-2015 X.commerce, Inc. (http://www.magento.com)
+ * @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
  */
 
 namespace Magento\Mtf\Util\Protocol\CurlTransport;
 
-use Magento\Mtf\Config\DataInterface;
-use Magento\Mtf\Util\Protocol\CurlInterface;
 use Magento\Mtf\Util\Protocol\CurlTransport;
+use Magento\Mtf\Util\Protocol\CurlInterface;
+use Magento\Mtf\Config\DataInterface;
 
 /**
- * Curl transport on backend.
+ * Backend decorator.
  */
 class BackendDecorator implements CurlInterface
 {
     /**
-     * Curl transport protocol.
-     *
-     * @var CurlTransport
+     * @var \Magento\Mtf\Util\Protocol\CurlTransport
      */
-    protected $transport;
+    protected $_transport;
 
     /**
-     * Form key.
-     *
-     * @var string
-     */
-    protected $formKey = null;
-
-    /**
-     * Response data.
-     *
-     * @var string
-     */
-    protected $response;
-
-    /**
-     * System config.
-     *
      * @var DataInterface
      */
-    protected $configuration;
+    protected $_configuration;
+
+    /**
+     * @var string
+     */
+    protected $_formKey = null;
+
+    /**
+     * @var string
+     */
+    protected $_response;
 
     /**
      * @constructor
@@ -50,9 +62,9 @@ class BackendDecorator implements CurlInterface
      */
     public function __construct(CurlTransport $transport, DataInterface $configuration)
     {
-        $this->transport = $transport;
-        $this->configuration = $configuration;
-        $this->authorize();
+        $this->_transport = $transport;
+        $this->_configuration = $configuration;
+        $this->_authorize();
     }
 
     /**
@@ -61,25 +73,17 @@ class BackendDecorator implements CurlInterface
      * @throws \Exception
      * @return void
      */
-    protected function authorize()
+    protected function _authorize()
     {
-        // Perform GET to backend url so form_key is set
         $url = $_ENV['app_backend_url'];
-        $this->transport->write($url, [], CurlInterface::GET);
-        $this->read();
-
-        $url = $_ENV['app_backend_url'] . $this->configuration->get('application/0/backendLoginUrl/0/value');
         $data = [
-            'login[username]' => $this->configuration->get('application/0/backendLogin/0/value'),
-            'login[password]' => $this->configuration->get('application/0/backendPassword/0/value'),
-            'form_key' => $this->formKey,
+            'login[username]' => $this->_configuration->get('application/0/backendLogin/0/value'),
+            'login[password]' => $this->_configuration->get('application/0/backendPassword/0/value')
         ];
-        $this->transport->write($url, $data, CurlInterface::POST);
+        $this->_transport->write(CurlInterface::POST, $url, '1.0', [], $data);
         $response = $this->read();
-        if (strpos($response, 'page-login')) {
-            throw new \Exception(
-                'Admin user cannot be logged in by curl handler!'
-            );
+        if (!strpos($response, 'link-logout')) {
+            throw new \Exception("Admin user cannot be logged in by curl handler!\n Post url: $url");
         }
     }
 
@@ -88,32 +92,39 @@ class BackendDecorator implements CurlInterface
      *
      * @return void
      */
-    protected function initFormKey()
+    protected function _initFormKey()
     {
-        preg_match('!var FORM_KEY = \'(\w+)\';!', $this->response, $matches);
+        preg_match('!var FORM_KEY = \'(\w+)\';!', $this->_response, $matches);
         if (!empty($matches[1])) {
-            $this->formKey = $matches[1];
+            $this->_formKey = $matches[1];
         }
     }
 
     /**
-     * Send request to the remote server.
+     * Send request to the remote server
      *
-     * @param string $url
-     * @param mixed $params
      * @param string $method
-     * @param mixed $headers
+     * @param string $url
+     * @param string $http_ver
+     * @param array $headers
+     * @param array $params
      * @return void
+     *
      * @throws \Exception
      */
-    public function write($url, $params = [], $method = CurlInterface::POST, $headers = [])
+    public function write($method, $url, $http_ver = '1.1', $headers = [], $params = [])
     {
-        if ($this->formKey) {
-            $params['form_key'] = $this->formKey;
+        if ($this->_formKey) {
+            $params['form_key'] = $this->_formKey;
+            isset($params['data'])
+                ? $params['data'] = preg_replace('!formKey!', $this->_formKey, $params['data'])
+                : null;
         } else {
-            throw new \Exception(sprintf('Form key is absent! Url: "%s" Response: "%s"', $url, $this->response));
+            throw new \Exception('Form key is absent! Response: \n'
+                . "Url:" . $url
+                . "Response:" . $this->_response);
         }
-        $this->transport->write($url, http_build_query($params), $method, $headers);
+        $this->_transport->write($method, $url, $http_ver, $headers, http_build_query($params));
     }
 
     /**
@@ -123,21 +134,21 @@ class BackendDecorator implements CurlInterface
      */
     public function read()
     {
-        $this->response = $this->transport->read();
-        $this->initFormKey();
-        return $this->response;
+        $this->_response = $this->_transport->read();
+        $this->_initFormKey();
+        return $this->_response;
     }
 
     /**
      * Add additional option to cURL.
      *
-     * @param int $option the CURLOPT_* constants
-     * @param mixed $value
+     * @param  int $option
+     * @param  mixed $value
      * @return void
      */
     public function addOption($option, $value)
     {
-        $this->transport->addOption($option, $value);
+        $this->_transport->addOption($option, $value);
     }
 
     /**
@@ -147,6 +158,6 @@ class BackendDecorator implements CurlInterface
      */
     public function close()
     {
-        $this->transport->close();
+        $this->_transport->close();
     }
 }

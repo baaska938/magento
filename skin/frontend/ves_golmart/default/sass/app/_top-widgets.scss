@@ -1,0 +1,116 @@
+/*** widgets using inside megamenu ***/
+.#{$app-brand-prefix}-widget{
+	.menu-title,
+	.widget-title{
+		text-transform:uppercase;
+		font-family: $font-headding-family;
+		font-weight: 500;
+		color: #222;
+		line-height: 36px;
+		margin-bottom: 15px;
+		padding-bottom: 4px;
+		border-bottom: 1px solid $border-color;
+	}
+	img { @include img-responsive ();}
+
+	.widget-brand-list {
+		h3{
+			display: none;
+		}
+		.post-item.itemcol {
+			@include inline-block();
+			@include rtl-margin-right(20px);
+			margin-bottom: 15px;
+		}
+	}
+}
+
+.ves-megamenu{
+	.widget-product-list{
+		.image{
+			@include rtl-float-left();
+			@include rtl-margin-right(10px);
+			margin-top: 0;
+			margin-bottom: 0;
+			width: 30%;
+			padding: 0!important;
+		}
+		.product-block{
+			@include rtl-text-align-left();
+			margin-bottom: 15px;
+			.name a{display: block;}
+			.cart{display: none;}
+			.price .price-old, .price .old-price{display: inline-block!important;}
+			&:hover{position: relative; box-shadow: none!important;}
+		} 
+	}
+}
+
+#ves-verticalmenu{
+	a{color: #666;}
+	.w-product{
+		@include rtl-float-left();
+		width: 31%;
+		@include rtl-margin-right(2%);
+		margin-bottom: 20px;
+		.cart{display: none;}
+		.image{padding: 0!important;}
+		&:hover{box-shadow: none!important;}
+	}
+	.menu-custom1{
+		a{
+			margin: 10px 0 15px;
+			@include rtl-float-left();
+			width: 100%;
+		}
+		.item{padding-left: 10px; padding-right: 10px;}
+	}
+	.a-right a{
+		font-weight: 500;
+		color: $theme-color-default;
+		&:hover{text-decoration: underline;}
+	}
+}
+
+.widget-newsletter{
+	.block-title{
+	}
+	.block-content{position: relative;}
+	.input-box{
+		@include rtl-padding-right(40px);
+		span{
+			color: $black;
+			@include rtl-border-right(1px solid #222);
+		    line-height: 25px;
+		    margin: 10px 12px;
+		    padding: 0 10px;
+		    position: absolute;
+		    text-transform: uppercase;
+		}
+	}
+	.form-control{
+		height: 45px;
+		@include rtl-padding-left(110px);
+		box-shadow: none!important;
+		border: 0!important;
+	}
+	.actions{
+		position: absolute;
+		@include rtl-right(0);
+		top: 0;
+		button{
+			background: $theme-color-primary;
+			border-radius: 0;
+			padding: 0 10px;
+			font-size: 20px;
+			height: 45px;
+			width: 50px;
+			border-color: transparent;
+			&:hover{background: $theme-color-default;}
+		}
+	}
+}
+
+.block.block-twitter-widget{
+	@include rtl-padding-left(3%);
+}
